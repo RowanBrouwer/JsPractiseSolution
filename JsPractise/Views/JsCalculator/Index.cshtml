@@ -1,0 +1,44 @@
+﻿@{ 
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<html>
+<body>
+    <link href="~/Content/jsCalculatorStyle.css" rel="stylesheet" />
+    <table border="0">
+        <tr>
+            <td><button class="button btn" value="c" onclick="clr()" />c</td>
+            <td colspan="6"><input title="result" type="text" id="textval" /></td>
+        </tr>
+        <tr>
+            <td><button class="button btn" value="+" onclick="display('+')" />+</td>
+            <td><button class="button btn" value="1" onclick="display('1')" />1</td>
+            <td><button class="button btn" value="2" onclick="display('2')" />2</td>
+            <td><button class="button btn" value="3" onclick="display('3')" />3</td>
+        </tr>
+        <tr>
+            <td><button class="button btn" value="-" onclick="display('-')" />-</td>
+            <td><button class="button btn" value="4" onclick="display('4')" />4</td>
+            <td><button class="button btn" value="5" onclick="display('5')" />5</td>
+            <td><button class="button btn" value="6" onclick="display('6')" />6</td>
+        </tr>
+        <tr>
+            <td><button class="button btn" value="*" onclick="display('*')" />*</td>
+            7<td><button class="button btn" value="7" onclick="display('7')" />7</td>
+            <td><button class="button btn" value="8" onclick="display('8')" />8</td>
+            <td><button class="button btn" value="9" onclick="display('9')" />9</td>
+        </tr>
+        <tr>
+            <td><button class="button btn" value="/" onclick="display('/')" />/</td>
+            <td><button class="button btn" value="." onclick="display('.')" />.</td>
+            <td><button class="button btn" value="0" onclick="display('0')" />0</td>
+            <td><button class="button btn" value="=" onclick="calculate()" />=</td>
+        </tr>
+    </table>
+    <script src="~/Scripts/JsCalculator.js"></script>
+</body>
+</html>
